@@ -1,0 +1,186 @@
+.header-wrapper .header .nav li:nth-child(3) a{
+  color: #414141;
+}
+.content-wrapper{
+  width: 100%;
+  background: url(../../../images/new/f_bg.png) no-repeat center bottom;
+  background-size: 100%;
+}
+.content7{
+  margin: 0 auto;
+  width: 1012px;
+  text-align: center;
+}
+.con7-img{
+  margin-top: 115px;
+  margin-bottom: 11px;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.con7-ul{
+  width: 100%;
+  height: auto;
+}
+.con7-item{
+  position: relative;
+  width: 232px;
+  height: 296px;
+  margin-top: 28px;
+  margin-right: 25px;
+  float: left;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  font-family: "å¾®è½¯é›…é»‘";
+}
+.con7-item .badge{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 12px solid #fff;
+  border-bottom: 12px solid #fff;
+
+}
+.con7-item-mr0{
+  margin-right: 0;
+}
+.con7-item h3{
+  width: 100%;
+  height: 123px;
+  line-height: 126px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 200;
+}
+.con7-item p{
+  width: 100%;
+  text-align: center;
+}
+.con7-item-p1,.con7-item-p2,.con7-item-p3{
+  height: 29px;
+  font-size: 14px;
+}
+.con7-item-p1{
+  color: #c0c0c0;
+}
+.con7-item-p2,.con7-item-p3{
+  color: #666666;
+}
+.con7-item-p4{
+  height: 30px;
+  font-size: 12px;
+  line-height: 40px;
+  color: #c0c0c0;
+}
+.con7-item-p5{
+  color: #c0c0c0;
+  font-size: 12px;
+}
+.con7-item-p6{
+  color: #c0c0c0;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.con7-item1 h3{
+    color: #eb8585;
+}
+.con7-item1 span{
+    color: #eb8585;
+}
+.con7-item1 .badge{
+  border-right: 12px solid #eb8585;
+  border-top: 12px solid #eb8585;
+}
+
+.con7-item2 h3{
+    color: #b680a8;
+}
+.con7-item2 span{
+    color: #b680a8;
+}
+.con7-item2 .badge{
+  border-right: 12px solid #b680a8;
+  border-top: 12px solid #b680a8;
+}
+
+.con7-item3 h3{
+    color: #f48996;
+}
+.con7-item3 span{
+    color: #f48996;
+}
+.con7-item3 .badge{
+  border-right: 12px solid #f48996;
+  border-top: 12px solid #f48996;
+}
+
+.con7-item4 h3{
+    color: #f77661;
+}
+.con7-item4 span{
+    color: #f77661;
+}
+.con7-item4 .badge{
+  border-right: 12px solid #f77661;
+  border-top: 12px solid #f77661;
+}
+
+.con7-item5 h3{
+    color: #ff9a55;
+}
+.con7-item5 span{
+    color: #ff9a55;
+}
+.con7-item5 .badge{
+  border-right: 12px solid #ff9a55;
+  border-top: 12px solid #ff9a55;
+}
+
+.con7-item6 h3{
+    color: #45a9b0;
+}
+.con7-item6 span{
+    color: #45a9b0;
+}
+.con7-item6 .badge{
+  border-right: 12px solid #45a9b0;
+  border-top: 12px solid #45a9b0;
+}
+
+.con7-item7 h3{
+    color: #ffca55;
+}
+.con7-item7 span{
+    color: #ffca55;
+}
+.con7-item7 .badge{
+  border-right: 12px solid #ffca55;
+  border-top: 12px solid #ffca55;
+}
+
+.con7-item8 h3{
+    color: #3689f1;
+}
+.con7-item8 span{
+    color: #3689f1;
+}
+.con7-item8 .badge{
+  border-right: 12px solid #3689f1;
+  border-top: 12px solid #3689f1;
+}
+
+.con7-item9 h3{
+    color: #42c4e2;
+}
+.con7-item9 span{
+    color: #42c4e2;
+}
+.con7-item9 .badge{
+  border-right: 12px solid #42c4e2;
+  border-top: 12px solid #42c4e2;
+}

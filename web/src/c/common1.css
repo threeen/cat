@@ -1,0 +1,560 @@
+@charset "UTF-8";
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*-----move1-----*/
+@-webkit-keyframes move1 {
+  0% {
+    transform: translatex(0) translatey(0);
+  }
+  50% {
+    transform: translatex(50px) translatey(25px);
+  }
+  0% {
+    transform: translatex(0) translatey(0);
+  }
+}
+
+@-o-keyframes move1 {
+  0% {
+    transform: translatex(0) translatey(0);
+  }
+  50% {
+    transform: translatex(50px) translatey(25px);
+  }
+  100% {
+    transform: translatex(0) translatey(0);
+  }
+}
+
+@-moz-keyframes move1 {
+  0% {
+    transform: translatex(0) translatey(0);
+  }
+  50% {
+    transform: translatex(50px) translatey(25px);
+  }
+  100% {
+    transform: translatex(0) translatey(0);
+  }
+}
+
+@keyframes move1 {
+  0% {
+    transform: translatex(0) translatey(0);
+  }
+  50% {
+    transform: translatex(50px) translatey(25px);
+  }
+  100% {
+    transform: translatex(0) translatey(0);
+  }
+}
+
+/*-----move2-----*/
+@-webkit-keyframes move2 {
+  from {
+    transform: translate(10px, 0);
+  }
+  to {
+    transform: translate(0, 10px);
+  }
+}
+
+@-o-keyframes move2 {
+  from {
+    transform: translate(50px, 0);
+  }
+  to {
+    transform: translate(0, 50px);
+  }
+}
+
+@-moz-keyframes move2 {
+  from {
+    transform: translate(50px, 0);
+  }
+  to {
+    transform: translate(0, 50px);
+  }
+}
+
+@keyframes move2 {
+  from {
+    transform: translate(50px, 0);
+  }
+  to {
+    transform: translate(0, 50px);
+  }
+}
+
+/*-----move3-----*/
+@-webkit-keyframes move3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@-o-keyframes move3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@-moz-keyframes move3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes move3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/*-----move4-----*/
+@-webkit-keyframes move4 {
+  0% {
+    transform: translate(20px, 0);
+  }
+  50% {
+    transform: translate(50px, 0);
+  }
+  100% {
+    transform: translate(20px, 0);
+  }
+}
+
+@-o-keyframes move4 {
+  0% {
+    transform: translate(20px, 0);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(20px, 0);
+  }
+}
+
+@-moz-keyframes move4 {
+  0% {
+    transform: translate(20px, 0);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(20px, 0);
+  }
+}
+
+@keyframes move4 {
+  0% {
+    transform: translate(20px, 0);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(20px, 0);
+  }
+}
+
+/*-----move5-----*/
+@-webkit-keyframes move5 {
+  0% {
+    transform: translate(20px, 0);
+  }
+  50% {
+    transform: translate(50px, 0);
+  }
+  100% {
+    transform: translate(20px, 0);
+  }
+}
+
+@-o-keyframes move5 {
+  0% {
+    transform: translate(20px, 0);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(20px, 0);
+  }
+}
+
+@-moz-keyframes move5 {
+  0% {
+    transform: translate(20px, 0);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(20px, 0);
+  }
+}
+
+@keyframes move5 {
+  0% {
+    transform: translate(20px, 0);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(20px, 0);
+  }
+}
+
+/*-----第五框 move6-----*/
+@-webkit-keyframes move6 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@-o-keyframes move6 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@-moz-keyframes move6 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes move6 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/*-----第五框 move7-----*/
+@-webkit-keyframes move7 {
+  0% {
+    transform: translate(0, 20px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 20px);
+  }
+}
+
+@-o-keyframes move7 {
+  0% {
+    transform: translate(0, 20px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 20px);
+  }
+}
+
+@-moz-keyframes move7 {
+  0% {
+    transform: translate(0, 20px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 20px);
+  }
+}
+
+@keyframes move7 {
+  0% {
+    transform: translate(0, 20px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 20px);
+  }
+}
+
+.bg-move {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+  width: 1080px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg-move .move1 {
+  width: 250px;
+  height: 108px;
+  position: absolute;
+  right: 260px;
+  top: -20px;
+  background: url(../../images/new/a_orange_bigcircle.png);
+  animation: move1 6s linear infinite;
+}
+
+.bg-move .move2 {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  right: 155px;
+  top: 20px;
+  z-index: 10;
+  background: url(../../images/new/a_yellow_circle.png);
+  animation: move2 6s infinite alternate;
+}
+
+.bg-move .move3 {
+  width: 121px;
+  height: 121px;
+  position: absolute;
+  right: 69px;
+  top: 5px;
+  background: url(../../images/new/a_blue_circle.png);
+  animation: move3 11s linear infinite;
+}
+
+.bg-move .move4 {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  background: url(../../images/new/a_red_circle.png);
+  animation: move4 7s linear infinite alternate;
+}
+
+.bg-move .move5 {
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  right: 130px;
+  top: 175px;
+  background: url(../../images/new/a_orange_circle.png);
+  animation: move5 9s linear infinite alternate;
+}
+
+.bg-move .move6 {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 205px;
+  top: 284px;
+  background: url(../../images/new/a_green_circle.png);
+  animation: move3 6s linear infinite alternate;
+}
+
+.bg-move .move7 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 322px;
+  top: 138px;
+  background: url(../../images/new/a_gray_circle.png);
+  animation: move4 7s linear infinite alternate;
+}
+
+.bg-move .move8 {
+  width: 86px;
+  height: 86px;
+  position: absolute;
+  left: 280px;
+  bottom: 0;
+  z-index: 10;
+  background: url(../../images/new/a_blue_square.png);
+  animation: move4 8s linear infinite alternate;
+}
+
+.bg-move .move9 {
+  width: 188px;
+  height: 145px;
+  position: absolute;
+  left: 112px;
+  bottom: -20px;
+  background: url(../../images/new/a_orange_square.png);
+  animation: move1 11s linear infinite alternate;
+}
+
+.bg-move .move10 {
+  width: 73px;
+  height: 73px;
+  position: absolute;
+  left: 35px;
+  bottom: 77px;
+  background: url(../../images/new/a_red_square.png);
+  animation: move3 9s linear infinite alternate;
+}
+
+.bg-move .move11 {
+  width: 149px;
+  height: 94px;
+  position: absolute;
+  left: 32px;
+  bottom: -20px;
+  background: url(../../images/new/a_yellow_bigsquare.png);
+  animation: move2 10s linear infinite alternate;
+}
+
+.bg-move .move12 {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 306px;
+  bottom: 225px;
+  background: url(../../images/new/a_yellow_square.png);
+  animation: move1 7s linear infinite alternate;
+}
+
+.bg-move .move13 {
+  width: 403px;
+  height: 96px;
+  position: absolute;
+  right: 32px;
+  bottom: 0;
+  background: url(../../images/new/a_blue_bigcircle.png);
+  animation: move5 6s linear infinite alternate;
+}
+
+.bg-move .move14 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 322px;
+  bottom: 138px;
+  background: url(../../images/new/a_gray_square.png);
+  animation: move2 5s linear infinite alternate;
+}

@@ -1,0 +1,184 @@
+.l-header {
+  width: 100%;
+  height: 72px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  border-bottom: 1px solid #ececec;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  line-height: 72px;
+}
+
+.l-header a {
+  display: inline-block;
+  width: 133px;
+  height: 36px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 10px;
+  margin: auto;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.l-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+}
+
+.l-container .l-container-in {
+  width: 330px;
+  height: 320px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  margin: auto;
+}
+
+.l-container .l-container-in h2 {
+  width: 100%;
+  height: 36px;
+  color: #a0a0a0;
+  font-size: 24px;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 100;
+}
+
+.l-container .l-container-in .border {
+  width: 100%;
+  height: 53px;
+  padding-top: 13px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.l-container .l-container-in .border input {
+  width: 100%;
+  height: 40px;
+  padding-left: 36px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  color: #333;
+  line-height: 40px;
+}
+input::-ms-clear{
+  display: none;
+}
+.l-container .l-container-in .border input:focus {
+  border-color: #ffa440;
+}
+
+.l-container .l-container-in .border input:focus {
+  border-color: #ffa440;
+}
+
+.l-container .l-container-in .border :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #a7a7a7;
+}
+
+.l-container .l-container-in .border ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #a7a7a7;
+}
+
+.l-container .l-container-in .border input:-ms-input-placeholder {
+  color: #a7a7a7;
+}
+
+.l-container .l-container-in .border input::-webkit-input-placeholder {
+  color: #a7a7a7;
+}
+
+.l-container .l-container-in .border .iconfont {
+  position: absolute;
+  bottom: 7px;
+  left: 15px;
+  font-size: 16px;
+  color: #a7a7a7;
+}
+
+.l-container .l-container-in .code-in {
+  padding-right: 110px;
+}
+
+.l-container .l-container-in .code-in .code-true {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  right: 2px;
+  bottom: 0;
+  background: #ccc;
+}
+
+.l-container .l-container-in .code-in .code-true button{
+  width: 100px;
+  height: 40px;
+  background: #ff6701;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.l-container .l-container-in .code-in .code-true .disable{
+	background: #cccccc;
+}
+
+.l-container .l-container-in .prompt-message {
+  width: 100%;
+  height: 32px;
+  color: #f87b7b;
+  text-indent: 12px;
+  line-height: 32px;
+}
+
+.l-container .l-container-in .login {
+  width: 100%;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 40px;
+  font-size: 14px;
+  height: 70px;
+  background: url(../../../images/new/login/sign_btn.png) no-repeat;
+  color: #fff;
+}
+
+.l-container .l-container-in .account-handle {
+  width: 100%;
+  height: 13px;
+  text-align: center;
+}
+
+.l-container .l-container-in .account-handle a {
+  font-size: 13px;
+  color: #a0a0a0;
+}
+
+.l-container .l-container-in .account-handle span {
+  margin: 0 3px;
+  color: #a0a0a0;
+}

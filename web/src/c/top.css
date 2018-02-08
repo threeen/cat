@@ -1,0 +1,88 @@
+/*--header--*/
+.header-wrapper {
+  width: 100%;
+  height: 72px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  border-bottom: 1px solid #ececec;
+  background: rgba(255, 255, 255, 0.95);
+  font-family: "å¾®è½¯é›…é»‘";
+}
+
+.header-wrapper .header {
+  width: 1080px;
+  height: 72px;
+  margin: 0 auto;
+}
+
+.header-wrapper .header #logo {
+  float: left;
+  width: 147px;
+  height: 59px;
+  padding-top: 15px;
+}
+
+.header-wrapper .header .nav {
+  float: left;
+  width: 530px;
+  height: 100%;
+}
+
+.header-wrapper .header .nav li {
+  float: left;
+  height: 72px;
+}
+
+.header-wrapper .header .nav li a {
+  display: block;
+  height: 72px;
+  line-height: 89px;
+  padding: 0 19px;
+  font-size: 15px;
+  color: #9e9e9e;
+}
+
+.header-wrapper .header .login {
+  float: right;
+  width: 235px;
+  height: 72px;
+  line-height: 72px;
+  font-size: 14px;
+}
+
+.header-wrapper .header .login .login-in {
+  width: 160px;
+  height: 72px;
+  float: left;
+  color: #c4c4c4;
+}
+
+.header-wrapper .header .login .login-in a {
+  float: left;
+  padding: 0 24px;
+  color: #ff6700;
+}
+
+.header-wrapper .header .login .login-in span {
+  float: left;
+}
+
+.header-wrapper .header .login .login-example {
+  float: right;
+  width: 75px;
+  height: 100%;
+}
+
+.header-wrapper .header .login .login-example a {
+  display: inline-block;
+  height: 33px;
+  width: 75px;
+  margin-top: 20px;
+  background: #ff6700;
+  color: #fff;
+  border-radius: 3px;
+  line-height: 33px;
+  text-align: center;
+}

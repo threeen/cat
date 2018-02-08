@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>首页</title>
+	<script src="../web/sea-modules/seajs/seajs.js"></script>
+	<script src="../web/sea-modules/seajs/seajs-combo.js"></script>
+	<script src="../web/sea-modules/seajs/seajs-text.js"></script>
+	<script src="../web/sea-modules/seajs/seajs-style.js"></script>
+	<script src="../web/sea-modules/seajs/seajs-log.js"></script>
+	<script src="../web/sea-modules/seajs/json.js"></script>
+
+	<script src="../web/src/config.js"></script>
+
+	<link rel="stylesheet" href="../web/src/c/common.css">
+	<link rel="stylesheet" href="../web/src/c/global.css">
+
+	<link rel="stylesheet" href="../web/src/c/iconfont.css">
+
+	<link rel="stylesheet" href="../web/src/c/font_217120_t13ffsmlh93323xr.css">
+	<link rel="shortcut icon" href="http://www.bianxianmao.com/../web/page/favicon.ico" />
+	<script>
+		seajs.config({
+			comboExcludes: /.*/
+		});
+		seajs.use([
+			'../web/lib/css/global.css',
+			'../web/lib/css/kuma-button.css',
+			'../web/lib/css/kuma-select.css',
+			'../web/lib/css/pagination.css',
+			'../web/lib/css/kuma-checkbox-blue.css',
+			'../web/lib/css/kuma-tiptext.css',
+			'../web/lib/css/kuma-form.css',
+			'../web/lib/css/calendar.css',
+			'../web/lib/css/selectperson.css',
+			'../web/lib/css/dialog.css',
+			'../web/lib/css/pagination.css'
+		]);
+	</script></head>
+<body id="home">
+	<div class="wrap">
+		<!-- service slider -->
+<div class="service">
+	<ul>
+		<li><a href="#"><i class="iconfont icon-icon363601"></i></a> <a
+			href="#" class="font-s">技术支持</a>
+			<div>
+				QQ 2153601400 <span class="arrow"></span>
+			</div></li>
+		<li><a href="#"><i class="iconfont icon-dianhua"></i></a> <a
+			href="#" class="font-s">联系电话</a>
+			<div>
+				400-6305-186 <span class="arrow"></span>
+			</div></li>
+		<li><a href="http://www.bianxianmao.com/doc" target="_blank"><i
+				class="iconfont icon-jinlingyingcaiwangtubiao45"></i></a> <a href="http://www.bianxianmao.com/doc"
+			class="font-s">对接文档</a></li>
+	</ul>
+</div>		<!-- end -->
+		<!-- left menu -->
+<div class="slider">
+	<div class="box">
+		<div class="top">
+			<div class="item logo">
+				<a href="javascript:;"><i class="iconfont icon-bianxianmaologo"></i></a>
+			</div>
+			<div class="slider-box" id="J_sliderBox">
+				<a href="#" class="up"></a>
+				<div class="slider-content">
+					<div class="item nav1">
+						<a href="manage/index.html"  data-menu="homeNavP"><i class="iconfont icon-profile"></i>
+						<div>首页</div></a> <span class="arrow"></span>
+					</div>
+					<div class="item nav7">
+						<a href="/manage/ad/operationData.html"  data-menu="adNavP"><i class="iconfont icon-card"></i>
+						<div>广告</div></a> <span class="arrow"></span>
+					</div>
+					<!--  
+					<div class="item nav3">
+						<a href="/manage/duobao/operationData.html"><i class="iconfont icon-precious"></i>
+						<div>夺宝</div></a> <span class="arrow"></span>
+					</div>
+					-->
+					<div class="item nav2">
+						<a href="/manage/live/operationData.html"  data-menu="liveNavP"><i class="iconfont icon-live"></i>
+						<div>直播</div></a> <span class="arrow"></span>
+					</div>
+					
+					<div class="item nav4">
+						<a href="/manage/buy/operationData.html" data-menu="buyNavP"><i class="iconfont icon-sale"></i>
+						<div>特卖</div></a> <span class="arrow"></span>
+					</div>
+					
+					<div class="item nav8">
+						<a href="/manage/book/operationData.html" data-menu="bookNavP"><i class="iconfont icon-read"></i>
+						<div>书城</div></a> <span class="arrow"></span>
+					</div>
+					 
+					<div class="item nav9">
+						<a href="/manage/mm/operationData.html" data-menu="mmNavP"><i class="iconfont icon-jifenshangcheng1"></i>
+						<div>积分商城</div></a> <span class="arrow"></span>
+					</div>
+					
+					
+					<div class="item nav10">
+						<a href="/manage/showcase/operationData.html" data-menu="showcaseNavP"><i class="iconfont icon-fulishe"></i>
+						<div>福利社</div></a> <span class="arrow"></span>
+					</div>
+					<div class="item nav12">
+						<a href="/manage/joke/operationData.html" data-menu="homeNavP"><i class="iconfont icon-baoxiaoyike"></i>
+						<div>搞笑段子</div></a> <span class="arrow"></span>
+					</div>
+					<div class="item nav13">
+						<a href="/manage/wawaji/operationData.html" data-menu="wawajiNavP"><i class="iconfont icon-wawaji"></i>
+						<div>娃娃机</div></a> <span class="arrow"></span>
+					</div>
+					
+				</div>
+				<a href="#" class="down"></a>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="item nav5">
+				<a href="/manage/setting/url.html"><i class="iconfont icon-configure"></i>
+					对接</a> <span class="arrow"></span>
+			</div>
+			<div class="item nav6">
+				<a href="/manage/account/cashApply.html"><i
+					class="iconfont icon-account"></i> 帐号</a> <span class="arrow"></span>
+			</div>
+			<div class="item">
+				<a href="/loginOut.html"><i class="iconfont icon-close"></i> 退出</a> <span
+					class="arrow"></span>
+			</div>
+		</div>
+	</div>
+</div>		<!-- end -->
+		<!-- main body -->
+		<div class="main-body">
+			<div class="main" style="background-color: transparent">
+				<!-- title -->
+				<div class="top">
+					<h3>首页</h3>
+					<span>appKey: <o id="J_appKey">--</o></span>
+				</div>
+				<!-- end -->
+				<!-- total info -->
+				<div class="total-info" style="height: 140px;">
+					<div class="item">
+						<div>
+							<h4>
+								可提现收益 <i class="iconfont icon-Q" id="trigger1"></i>
+							</h4>
+							<div class="rmb" id="J_txRmb" style="float: left; margin-right: 10px;">
+								<span>元</span>
+							</div>
+							<a href="/manage/account/cashApply.html" class="button">提现</a>
+						</div>
+					</div>
+					<div class="item">
+						<div>
+							<h4>
+								预计收益 <i class="iconfont icon-Q" id="trigger6"></i>
+							</h4>
+							<div class="rmb" id="J_yjRmb">
+								<span>元</span>
+							</div>
+
+						</div>
+					</div>
+					<div class="item">
+						<div>
+							<h4>
+								累计收益 <i class="iconfont icon-Q" id="trigger2"></i>
+							</h4>
+							<div class="rmb" id="J_totalRmb">
+								--<span>元</span>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div>
+							<h4>
+								预存余额 <i class="iconfont icon-Q" id="trigger3"></i>
+							</h4>
+							<div class="rmb" id="J_giveRmb">
+								--<span>元</span>
+							</div>
+							<a href="#" class="button" style="display: none">充值</a>
+						</div>
+					</div>
+				</div>
+				<!-- end -->
+				<!-- day trend -->
+				<div class="day-trend">
+					<div class="content-box box">
+						<div class="search">
+							<div class="form-horizontal" id="J_form">
+
+								<div class="form-group">
+									<input placeholder="查询时间起" type="text" name="start-time"
+										class="form-control" id="J_starTime" value="2018-01-24">
+								</div>
+								<div class="form-group">
+									<input placeholder="查询时间末" type="text" name="end-time"
+										class="form-control" id="J_endTime" value="2018-02-06">
+								</div>
+								<div class="form-group no-width">
+									<button class="btn btn-primary" id="J_search">查询</button>
+								</div>
+								<div class="form-group no-width">
+									<button class="btn btn-primary" id="J_export">导出</button>
+								</div>
+							</div>
+						</div>
+						<div class="chart-line">
+							<div class="title">
+								<h3>
+									每日收益 <i class="iconfont icon-Q" id="trigger4"></i>
+								</h3>
+								<div>
+									<ul>
+										<!--  
+										<li>一元夺宝</li>-->
+										<li>视频直播</li>
+										<li>爆款特卖</li>
+										<li>广告</li>
+										<li>书城</li>
+										<li>积分商城</li>
+										<li>福利社</li>
+										<li>搞笑段子</li>
+										<li>娃娃机</li>
+									</ul>
+								</div>
+							</div>
+							<div class="bd" id="incomeContainer"
+								style="min-width: 400px; height: 400px">
+								<div class="loading">
+									<img src="http://file.bianxianmao.com/image/loading.gif" />
+								</div>
+							</div>
+						</div>
+						<div class="chart-circle">
+							<div class="tip">
+								<ul id="J_tipBox"><!-- 
+									<li>夺宝&nbsp;<b>0%</b></li>-->
+									<li>直播&nbsp;<b>0%</b></li>
+									<li>爆款特卖&nbsp;<b>0%</b></li>
+									<li>广告&nbsp;<b>0%</b></li>
+									<li>书城&nbsp;<b>0%</b></li>
+									<li>积分商城&nbsp;<b>0%</b></li>
+									<li>福利社&nbsp;<b>0%</b></li>
+									<li>搞笑段子&nbsp;<b>0%</b></li>
+									<li>娃娃机&nbsp;<b>0%</b></li>
+								</ul>
+							</div>
+							<div class="title">
+								<h3>
+									收益比例 <i class="iconfont icon-Q" id="trigger5"></i>
+								</h3>
+							</div>
+							<div class="bd" id="preContainer"
+								style="min-width: 300px; height: 400px; padding-right: 0">
+								<div class="loading">
+									<img src="http://file.bianxianmao.com/image/loading.gif" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end -->
+				<div class="bottom-slider">
+					<div class="ht">
+						<img src="../web/images/product.png" />
+						<p>产品接入</p>
+					</div>
+					<div class="list">
+						<ul>
+							<!-- <li><a href="/manage/setting/url.html"><img
+									src="../web/images/product_duobao.png" />
+									<p>一元夺宝</p> </a></li>-->
+							<li><a href="/manage/setting/url.html"><img
+									src="../web/images/product_zhibo.png" />
+									<p>视频直播</p> </a></li>
+							<li><a href="/manage/setting/url.html"><img
+									src="../web/images/product_qianggou.png" />
+									<p>爆款特卖</p></a></li>
+							<li><a href="/manage/setting/url.html"><img
+									src="../web/images/product_guaka.png" />
+									<p>广告</p></a></li>
+							<li><a href="/manage/setting/url.html"><img
+									src="../web/images/product_shucheng.png" />
+									<p>小说阅读</p></a></li>
+							<li><a href="/manage/setting/url.html"><img
+									src="../web/images/product_jifen.png" />
+									<p>积分商城</p></a></li>
+							<li><a href="/manage/setting/url.html"><img
+									src="../web/images/product_fuli.png" />
+									<p>福利社</p></a></li>
+							<li><a href="/manage/setting/url.html"><img
+									src="../web/images/product_bxyk.png" />
+									<p>搞笑段子</p></a></li>
+									
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end -->
+	</div>
+
+	<script>
+		seajs.use('../web/src/c/global.js')
+		seajs.use('../web/src/p/index/index.js');
+	</script>
+</body>
+</html>

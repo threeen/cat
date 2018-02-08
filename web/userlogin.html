@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>运营犬－用户登录</title>
+	<meta name="keywords" content="登录运营犬｜运营犬用户后台｜运营犬管理系统"/>
+	<meta name="description" content="运营犬－流量变现管理系统，移动开发者对接运营犬之后，可以通过本后台管理变现业务，提现收益！"/>
+	<meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta content="always" name="referrer">
+	<link rel="shortcut icon" href="page/favicon.ico" />
+<script src="sea-modules/seajs/seajs.js"></script>
+	<script src="sea-modules/seajs/seajs-combo.js"></script>
+	<script src="sea-modules/seajs/seajs-text.js"></script>
+
+	<script src="src/config.js"></script>
+
+	<script>
+		seajs.config({
+			comboExcludes: /.*/
+		});
+		seajs.use([
+			'lib/css/global.css',
+			'lib/css/kuma-button.css',
+			'lib/css/kuma-select.css',
+			'lib/css/pagination.css',
+			'lib/css/kuma-checkbox-blue.css',
+			'lib/css/kuma-tiptext.css',
+			'lib/css/kuma-form.css',
+			'lib/css/calendar.css',
+			'lib/css/selectperson.css',
+			'lib/css/dialog.css',
+			'lib/css/pagination.css',
+		]);
+	</script>	
+	<script type="text/javascript" src="page/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="lib/js/md5.js"></script>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_nnjx1mx3mh146lxr.css"><!--字体图标-->
+	<link rel="stylesheet" href="src/p/login/index.css">
+	<link rel="stylesheet" href="src/c/common1.css">
+	<script src="src/c/baidu.js"></script>
+</head>
+<body>
+	<!--  header  -->
+	<div class="l-header">
+		<a href="/index.html">
+			<img class="img" src="images/new/logo.png"/>
+		</a>
+	</div>
+	<!--  body  -->
+	<div class="l-container">
+		<div class="bg-move">
+			<div class="move move1"></div>
+			<div class="move move2"></div>
+			<div class="move move3"></div>
+			<div class="move move4"></div>
+			<div class="move move5"></div>
+			<div class="move move6"></div>
+			<div class="move move7"></div>
+			
+			<div class="move move8"></div>
+			<div class="move move9"></div>
+			<div class="move move10"></div>
+			<div class="move move11"></div>
+			<div class="move move12"></div>
+			<div class="move move13"></div>
+			<div class="move move14"></div>
+			
+		</div>
+		<div class="l-container-in" id="J_login">
+			<h2>登录运营犬</h2>
+			<div class="border">
+				<i class="iconfont icon-zhanghao"></i>
+				<input class="num" type="text" placeholder="请输入邮箱或手机号" name="username"/>
+			</div>
+			<div class="border">
+				<i class="iconfont icon-mima"></i>
+				<input class="password" type="password" placeholder="请输入密码" name="password"/>
+			</div>
+			<!--<div class="border code-in">
+				<i class="iconfont icon-yanzhengma"></i>
+				<input class="code" type="tel" placeholder="请输入验证码" name="validate-code"/>
+				<div class="code-true">
+					<img alt="验证码" height="40" width="100%"
+						src="/common/getImgValidateApi.json?width=200&height=80&is_create_interference_line=true&interference_line_num=0"
+						id="imgId"
+						onclick="javascript:this.src='/common/getImgValidateApi.json?width=200&height=80&is_create_interference_line=true&interference_line_num=0&' + new Date().getTime();" />
+				</div>
+			</div>-->
+			<p class="prompt-message" id="J_tipError">
+			</p>
+			<div class="login login3">
+				登录
+			</div>
+			<div class="account-handle">
+				<a href="findPassword.html">忘记密码？</a>
+				<span>|</span>
+				<a href="register.html">注册新用户</a>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="src/p/login/index.js"></script>
+<script>
+		seajs.use('src/p/login/index.js');
+</script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>运营犬－用户注册</title>
+	<meta name="keywords" content="注册运营犬｜运营犬用户注册" />
+	<meta name="description" content=" " />
+	<meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta content="always" name="referrer">
+	
+	<link rel="shortcut icon" href="page/favicon.ico" />
+<script src="sea-modules/seajs/seajs.js"></script>
+	<script src="sea-modules/seajs/seajs-combo.js"></script>
+	<script src="sea-modules/seajs/seajs-text.js"></script>
+
+	<script src="src/config.js"></script>
+
+	<script>
+		seajs.config({
+			comboExcludes: /.*/
+		});
+		seajs.use([
+			'lib/css/global.css',
+			'lib/css/kuma-button.css',
+			'lib/css/kuma-select.css',
+			'lib/css/pagination.css',
+			'lib/css/kuma-checkbox-blue.css',
+			'lib/css/kuma-tiptext.css',
+			'lib/css/kuma-form.css',
+			'lib/css/calendar.css',
+			'lib/css/selectperson.css',
+			'lib/css/dialog.css',
+			'lib/css/pagination.css',
+		]);
+	</script>
+	<script type="text/javascript" src="page/jquery-1.11.1.min.js"></script>	
+	<link rel="stylesheet" href="src/c/common1.css">
+	<link rel="stylesheet" href="src/c/scroll.css">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_nnjx1mx3mh146lxr.css"><!--字体图标-->
+	<link rel="stylesheet" href="src/p/register/index.css">
+	
+	<script type="text/javascript" src="lib/js/md5.js"></script>
+	<script type="text/javascript" src="src/c/scroll.js"></script>
+	<script type="text/javascript" src="src/p/register/index1.js"></script>
+	<script src="src/c/baidu.js"></script>
+</head>
+<body>
+	<!--  header  -->
+	<div class="r-header">
+		<a href="/index.html">
+			<img class="img" src="images/new/logo.png"/>
+		</a>
+	</div>
+	<!--  body  -->
+	<div class="r-container">
+	<div class="r-containerinner">
+		<div class="bg-move">
+			<div class="move move1"></div>
+			<div class="move move2"></div>
+			<div class="move move3"></div>
+			<div class="move move4"></div>
+			<div class="move move5"></div>
+			<div class="move move6"></div>
+			<div class="move move7"></div>
+			
+			<div class="move move8"></div>
+			<div class="move move9"></div>
+			<div class="move move10"></div>
+			<div class="move move11"></div>
+			<div class="move move12"></div>
+			<div class="move move13"></div>
+			<div class="move move14"></div>
+			
+		</div>
+		<div class="r-container-in" id="J_register">
+			<h2>注册运营犬</h2>
+			<div class="border">
+				<i class="iconfont icon-zhanghao"></i>
+				<input class="num" type="text" name="email" maxlength='50' placeholder="请输入邮箱并确保可用" />
+			</div>
+			<div class="border">
+				<i class="iconfont icon-mima"></i>
+				<input class="password" type="password" name="password" maxlength='16' placeholder="设置你的密码,6-15位可包含数字及字母" />
+			</div>
+			<div class="border">
+				<i class="iconfont icon-gongsi"></i>
+				<input class="password" type="text" placeholder="请输入公司名称" name="company" maxlength='50'/>
+			</div>
+			<div class="border">
+				<i class="iconfont icon-gongsi"></i>
+				<input class="password" type="text" placeholder="请输入公司营业执照号" name="companycount" maxlength='50'/>
+			</div>
+			<div class="border file">
+				<i class="iconfont icon-gongsi"></i>
+				<input class="password companyimg" type="text" placeholder="上传营业执照图片" name="companyimg" readonly/>
+				<div class="buttonGroup1">
+					<span>查看</span>
+				</div>
+				<div class="buttonGroup2">
+				<label for="credentialImgOne" class="upload-label">
+					<span>上传</span>
+					</label>
+					<input type="file" class="form-control  input-file" name="credentialImgOne" id="credentialImgOne" accept="image/jpg,image/jpeg,image/png" style="display: none;" />
+				</div>
+			</div>
+			<div class="border">
+				<i class="iconfont icon-yingyong"></i>
+				<input class="password" type="text" placeholder="请输入应用名称"  name="appname" 	maxlength='50'/>
+			</div>
+			<div class="border">
+				<i class="iconfont icon-xingming"></i>
+				<input class="password" type="text" placeholder="请输入姓名" name="fullname" maxlength='50'/>
+			</div>
+			<div class="border">
+				<i class="iconfont icon-dianhua1"></i>
+				<input class="password" type="text" placeholder="请输入手机号码" name="mobile"/>
+			</div>
+			<!--<div class="border code-in">
+				<i class="iconfont icon-yanzhengma"></i>
+				<input class="code" type="tel" placeholder="请输入验证码" name="validate-code-img"/>
+				<div class="code-true">
+					<img alt="验证码" height="40" width="100%"
+						src="../common/getImgValidateApi.json?width=200&height=80&is_create_interference_line=true&interference_line_num=0"
+						id="imgId"
+						onclick="javascript:this.src='../common/getImgValidateApi.json?width=200&height=80&is_create_interference_line=true&interference_line_num=0&' + new Date().getTime();" />
+				</div>
+			</div>-->
+			<div class="border code-in">
+				<i class="iconfont icon-yanzhengma"></i>
+				<input class="code" type="tel" placeholder="请输入短信验证码" name="validate-code"/>
+				<div class="code-true">
+					<button type="button" name="send-code">获取验证码</button>
+				</div>
+			</div>
+			<p class="prompt-message" id="J_tipError">
+			</p>
+			<div class="register" id="register">
+				注册
+			</div>
+			<div class="account-handle">
+				<input type="checkbox" name="isagree" id="" value="" checked/>
+				我已阅读并同意<a href="javascript:;">《运营犬服务使用协议》</a>
+			</div>
+		</div>
+		<div class="agreement-wrapper">
+			<div class="agreement">
+				<h3>开发者合作协议 <i class="iconfont icon-cha"></i></h3>
+				<!--<div class="agree-con">-->
+					<!--<p>-->
+						<!--感谢您使用杭州微财网络科技有限公司提供的服务，请仔细阅读下列内容并在明确理解的前提下注册：变现猫流量变现系统的所有权和运营权归杭州微财网络科技有限公司所有。为获得变现猫流量变现系统所提供的相关服务，您需要同意本《协议》全部条款并按照页面上的提示完成注册程序。如果您在注册过程中点击“同意”按钮即表示完全接受本《协议》的所有内容，并且在知情的基础上明确同意按本《协议》的规定处理、使用和披露您及您用户的信息。如果您不接受本《协议》，请不要安装、使用、注册或以其他方式访问我们的服务。-->
+					<!--</p>-->
+					<!--<h5>服务内容</h5>-->
+					<!--<p>-->
+						<!--变现猫流量变现系统的服务内容由杭州微财网络科技有限公司根据实际情况提供给您，我们保留随时修改本《协议》的权利，并会在修改后于本页面公布修改后的文本，因此，请经常查看本页。如果您继续使用我们的服务，就视同接受我们对本《协议》的修改。 如因系统维护或升级的需要而需暂停网络服务，我们将尽可能亊先在重要页面进行通告，请您随时留意我们的页面。 请您就所有文件及数据做好备份，除非专门协议，我们不承担为您或您的用户保存任何文件的责任，因为服务中断或者终止等产生的损失由您及您的用户自行承担。如果因为您的用户向我们索赔以至于我们承担了赔偿责任的，您应当作为最终赔偿责任人。-->
+					<!--</p>-->
+					<!--<h5>使用规则</h5>-->
+					<!--<p>-->
+						<!--1、你需要在申请注册变现猫流量变现系统时，先同意本《协议》，才能使用我们的服务。在您注册时，须要向我们提供准确的企业和个人资料（如邮箱、身份证、联系方式、公司或团队名称等），如您使用服务期间个人资料有所变更，应及时向我们发出书面通知，以便我们能够及时维护您的账户，并为您提供相应服务，否则对于可能造成的损失将由您自行承担，我们也可能利用这些信息来通知您最新的产品更新和市场活动。-->
+						<!--<br />-->
+						<!--<br />-->
+						<!--2、如果您通过下载或其他方式使用了本变现猫流量变现系统，则您就认可了该变现猫流量变现系统可由我们随时升级、下载更新和用于改进、增强及进一步开发该开发工具包的其他功能。-->
+						<!--<br />-->
+						<!--<br />-->
+						<!--3、为使用我们的服务，您在开发并向您的用户提供（无论是否有偿）应用程序时，应当向您的用户至少披露以下内容且取得您用户的明确同意：“本公司开发本应用程序时所对外签署或承诺的任何软件的许可协议条款或服务或隐私协议均对本应用程序的用户产生约束，为本应用程序不可分割的一部分。”以作为您的用户使用您开发的应用程序的必要条款。应当明确的是，您向您的用户实际是否披露且取得他们同意前述条款不影响您承担对外提供应用程序所应承担的责任，均与我们无关。-->
+						<!--<br />-->
+						<!--<br />-->
+						<!--4、您不得对本变现猫流量变现系统进行修改、二次创作、反编译或反向工程，或其他提取源代码的尝试以及实施任何涉嫌侵害著作权的行为，除非我们给予您明确的书面认可。-->
+						<!--<br />-->
+						<!--<br />-->
+						<!--5、您在使用我们提供的服务时，必须遵循以下原则：不得危害国家安全、泄露国家秘密，不得侵犯国家社会集体的和公民的合法权益，不得制作、复制、查阅和传播下列信息： 违反宪法确定的基本原则的； 危害国家安全，泄漏国家机密，颠覆国家政权，破坏国家统一的； 损害国家荣誉和利益的； 煽动民族仇恨、民族歧视，破坏民族团结的； 破坏国家宗教政策，宣扬邪教和封建迷信的； 散布谣言，扰乱社会秩序，破坏社会稳定的； 散布或者从事淫秽、色情、赌博、洗钱、暴力、恐怖或者教唆犯罪的； 侮辱或者诽谤他人，侵害他人合法权益的； 煽动非法集会、结社、游行、示威、聚众扰乱社会秩序的； 以非法民间组织名义活动的； 含有法律、行政法规禁止的其它内容的。-->
+						<!--<br />-->
+						<!--<br />-->
+						<!--6、我们保留在任何时候根据适用法律、法规、法律程序或政府要求的需要而披露任何信息，或由我们自主决定全部或部分地编辑、拒绝张贴或删除任何信息或资料的权利。-->
+						<!--<br />-->
+						<!--<br />-->
+						<!--7、隐私权政策：为了给您提供更好的服务，当您使用或者启动变现猫流量变现系统时，涉及包括用户的相关信息、兑换记录等信息。除了得到您的授权、或者相关政府部门根据法律法规的规定提出要求、或者您违反了本《协议》的约定的条款、或者维护我们合法权利的情况外，我们将不会泄露您的任何信息。-->
+						<!--<br />-->
+						<!--<br />-->
+						<!--8、变现猫流量变现系统的替换、修改和升级：我们保留在任何时候为您提供本变现猫流量变现系统替换、修改、升级版本的权利。同时，您在此同意，为改善您体验，我们有权将公司的其他相关产品绑定在本变现猫流量变现系统上供您下载和安装。-->
+						<!--<br />-->
+						<!--<br />-->
+						<!--9、本变现猫流量变现系统可能使用的第三方软件或技术，是受到合法授权的。因第三方软件或技术引发的任何纠纷，由该第三方负责解决，我们不承担任何责任。我们不对第三方软件或技术提供客服支持，若您需要获取支持，请与该软件或技术提供商联系。-->
+						<!--<br />-->
+						<!--<br />-->
+						<!--10、开发者需保证自身用户流量的真实性，若发现有刷量、掺假量等作弊行为（具体方式包括但不限于通过技术手段、人为手段、诱导用户以增加广告收益等），或者用户广告转化异常等情况，变现猫有权不予结算未结算费用，如发现已结算费用中存在以上情形的，则变现猫有权要求开发者双倍退还已结算费用。是否存在以上情形以变现猫委托有鉴定业务的第三方机构进行鉴定评估，该第三方机构出具的结论对开发者具有约束力。如出现上述情形，视为开发者根本性违约。-->
+						<!--<br />-->
+						<!--<br />-->
+						<!--11、开发者需保证自身用户流量的合法性，非法流量包括但不限于如 电信劫持，恶意PUSH，弹窗，黄赌等。一旦发现，变现猫有权不予结算收益，因此引起的一切影响及损失，由开发者承担。-->
+						<!--<br />-->
+						<!--<br />-->
+						<!--12、开发者需保证变现猫的产品和服务在自身用户流量的可用性，如因开发者未进行测试验证原因导致的一切损失，由开发者承担。	-->
+					<!--</p>-->
+					<!--<h5>安全条款</h5>-->
+					<!--<p>-->
+						<!--1、非经我们或我们授权开发并正式发布的其它任何由本变现猫流量变现系统衍生的软件均属非法，下载、安装、使用上述衍生此类软件，将可能导致不可预知的风险，建议您不要轻易下载、安装、使用，由此产生的一切法律责任与纠纷一概与我们无关。-->
+						<!--<br /><br />-->
+						<!--2、您注册成功后，我们将给予您相应的账号、密码，该账号和密码由您负责保管，请您不要将您的账号、密码转让或出借予他人使用。如您发现您的账号遭他人非法使用，应立即变更密码并通知我们。-->
+						<!--<br /><br />-->
+						<!--3、注册之后，请严格保护好自己的APP KEY、App Secret。如若泄露需要及时联系我们替换。由于开发者主观或者客观原因泄露上述信息导致的风险或者损失由开发者承担。-->
+						<!--<br /><br />-->
+						<!--4、本变现猫流量变现系统同大多数互联网软件一样，可能受到各种安全问题的侵扰，继而影响本变现猫流量变现系统的正常使用等。您应加强信息安全及用户资料的保护意识，以免遭致损失和骚扰。-->
+					<!--</p>-->
+					<!--<h5>支付及结算条款</h5>-->
+					<!--<p>-->
+						<!--1、开发者在变现猫平台的账户不可用于其它业务使用，此账户仅用于变现猫收到开发者代充、代付指令后，向用户的账户或订单指定的账户完成支付。开发者对其发出的代充、代付指令的真实性、合法性予以负责。变现猫不提供任何形式的冲正功能，由于变现猫原因造成的支付相关的问题，由变现猫负责协调处理。交易结算以变现猫系统及第三方支付系统记录的充值、支付记录为准。-->
+						<!--<br /><br />-->
+						<!--2、为了保证交易安全、结算方便，双方采取交易预付款实时结算模式。业务开展后开发者应向付款账户打入交易预付款，变现猫根据收到乙方代充、代付指令实时扣款、结算。若因一方或双方原因致使对账单发生错误，并因此导致开发者多付或少付结算款给变现猫，则双方应及时协商纠正该等错误，并由一方根据实际情况多退少补结算款给对方。-->
+						<!--<br /><br />-->
+						<!--3、开发者账户预付款与用户账户资金以人民币为单位，开发者不得自行设置。-->
+						<!--<br /><br />-->
+						<!--4、各类结算项、活动的资费标准，请以变现猫后台价格表说明为准。我们保留根据市场变化调整规则、价格、资费的权利。价格变动会在后台公告中予以公告，请留意查看。-->
+						<!--<br /><br />-->
+						<!--5、应用开发者需及时补充资金到自己的账户。由于余额不足导致的支付服务暂停产生的影响由开发者自行负责。-->
+					<!--</p>-->
+					<!--<h5>法律责任与免责</h5>-->
+					<!--<p>-->
+						<!--1、如您违反本《协议》或相关的服务规定，导致或产生的任何第三方向我们及合作公司、关联公司主张的任何索赔、要求或损失，包括合理的诉讼费用和律师费用，您同意赔偿我们及其与合作公司、关联公司，并使之免受损害。对此，我们有权视您的行为性质，采取包括但不限于中断使用许可、停止提供服务、限制使用、法律追究等措施。-->
+						<!--<br /><br />-->
+						<!--2、使用本变现猫流量变现系统涉及到互联网服务，可能会受到各个环节不稳定因素的影响，存在因不可抗力、计算机病毒、黑客攻击、系统不稳定、您所在位置、关机以及其他任何网络、技术、通信线路等原因造成的服务中断或不能满足要求的风险，您须明白并自行承担以上风险，我们不承担任何责任。-->
+						<!--<br /><br />-->
+						<!--3、您因第三方如电信部门的通讯线路故障、技术问题、网络、电脑故障、系统不稳定性及其他各种不可抗力原因而遭受的经济损失，我们不承担任何责任。-->
+						<!--<br /><br />-->
+						<!--4、因技术故障等不可抗力事件影响到服务的正常运行的，我们承诺在第一时间内与相关单位配合，及时处理进行修复，但您因此而遭受的经济损失，我们不承担任何责任。-->
+					<!--</p>-->
+					<!--<h5>知识产权</h5>-->
+					<!--<p>-->
+						<!--1、变现猫流量变现系统由杭州微财网络科技有限公司开发。变现猫流量变现系统的一切版权等知识产权，以及与变现猫流量变现系统相关的所有信息内容，包括但不限于：文字表述及其组合、图标、图饰、图表、色彩、界面设计、版面框架、有关数据、印刷材料、或电子文档等均为杭州微财网络科技有限公司所有，受中国著作权法和国际著作权条约以及其他知识产权法律法规的保护。-->
+						<!--<br /><br />-->
+						<!--2、本《协议》未明示授权的其他一切权利仍归杭州微财网络科技有限公司所有，您使用其他权利时须另外取得杭州微财网络科技有限公司的书面同意。-->
+					<!--</p>-->
+					<!--<h5>内容所有权</h5>-->
+					<!--<p>-->
+						<!--您在变现猫流量变现系统上发布的信息内容我们双方共同所有，任何其他组织或个人未经我们授权同意，不得复制、转载、擅改其内容。-->
+					<!--</p>	-->
+					<!--<h5>其他条款</h5>-->
+					<!--<p>-->
+						<!--1、本《协议》所定的任何条款的部分或全部无效的者，不影响其它条款的效力。-->
+						<!--<br /><br />-->
+						<!--2、本《协议》的解释、效力及纠纷的解决，适用于中华人民共和国法律。若您和我们之间发生任何纠纷或争议，首先应友好协商解决，协商不成的，您同意将纠纷或争议提交杭州微财网络科技有限公司所在地有管辖权的法院诉讼解决。-->
+					<!--</p>-->
+				<!--</div>-->
+			</div>
+		</div>
+	</div>
+	</div>
+	<script type="text/javascript" src="src/p/register/index.js"></script>
+	<script>
+		seajs.use('src/p/register/index');
+	</script>
+</body>
+	
+</html>
